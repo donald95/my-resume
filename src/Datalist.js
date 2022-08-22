@@ -5,7 +5,7 @@ export function Datalist({ items }) {
          columnGap: "30px",
          fontFamily: "Roboto",
          fontWeight: "normal",
-         fontSize: "min(3.2vmin, 12px)",
+         fontSize: "12px",
          margin: "5px 0",
          lineHeight: 1.4,
       }}>

@@ -1,9 +1,9 @@
 
-export function Title({ text, size = "50px" }) {
+export function Title({ text, size = "35px", className = "" }) {
    return (
       <>
-         <h1 style={{
-            fontSize: `min(5vmin,  ${size})`,
+         <h1 className={className} style={{
+            fontSize: `${size}`,
             fontFamily: "Oswald",
             fontWeight: "normal",
             padding: 0,

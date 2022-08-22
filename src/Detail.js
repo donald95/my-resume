@@ -5,7 +5,7 @@ export function Detail({ text }) {
          <p style={{
             fontFamily: "Roboto",
             fontWeight: "normal",            
-            fontSize: "min(3.2vmin, 12px)",
+            fontSize: "12px",
             margin: "5px 0",
             color: "#666666",
             lineHeight: 1.4,      
