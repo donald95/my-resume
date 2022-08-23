@@ -7,14 +7,16 @@ import { Detail } from "./Detail"
 import { Subtitle } from "./Subtitle"
 import { Listbox } from "./Listbox"
 import { Datalist } from "./Datalist"
+import { Info } from "./Info"
 import { data } from "./data"
 import "./Fonts.css"
 
 const root = ReactDom.createRoot(document.getElementById('root'))
 
 root.render(
-   <>
+   <React.StrictMode>      
       <Page>
+         <Info />
          <Section>
             <Title text={data[0].title[0]} className="main-title" />
             <Title text={data[0].title[1]} size="15px" />
@@ -55,10 +57,10 @@ root.render(
          <Section>
             <Title text={data[10].title} size="15px" />
             <Datalist items={data[10].items} />
-         </Section>         
+         </Section>
       </Page>
       <Page>
-      <Section>
+         <Section>
             <Title text={data[11].title} size="15px" />
             <Subtitle text={data[11].subtitle} />
             <Detail text={data[11].detail} />
@@ -72,5 +74,5 @@ root.render(
             <Detail text={data[13].detail} />
          </Section>
       </Page>
-   </>
+   </React.StrictMode>
 )
